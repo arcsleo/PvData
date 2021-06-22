@@ -4,6 +4,7 @@ import './index.css';
 import Banner from './components/Banner';
 import Header from './components/Header';
 import SecondBanner from './components/SecondBanner';
+import FirstTab from './components/FirstTab';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -11,6 +12,7 @@ ReactDOM.render(
     <Header />
     <Banner />
     <SecondBanner />
+    <FirstTab />
   </React.StrictMode>,
   document.getElementById('root')
 );
