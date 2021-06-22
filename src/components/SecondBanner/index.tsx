@@ -7,8 +7,6 @@ import Logo4 from '../../assets/image/logo4.png';
 
 export default function SecondBanner(props: any){
 
-    const [sticked, setSticked] = React.useState(false);
-
     return(
         <div className="SecondBanner">
             <div className="SecondBannerLeft">
@@ -21,16 +19,16 @@ export default function SecondBanner(props: any){
             </div>
             <div className="SecondBannerRight">
                 <div className="SecondBannerRightImagediv">
-                    <img src={Logo1} className="SecondBannerRightImage" />
+                    <img src={Logo1} className="SecondBannerRightImage" alt="" />
                 </div>
                 <div className="SecondBannerRightImagediv">
-                    <img src={Logo2} className="SecondBannerRightImage" />
+                    <img src={Logo2} className="SecondBannerRightImage" alt="" />
                 </div>
                 <div className="SecondBannerRightImagediv1">
-                    <img src={Logo3} className="SecondBannerRightImage" />
+                    <img src={Logo3} className="SecondBannerRightImage" alt="" />
                 </div>
                 <div className="SecondBannerRightImagediv">
-                    <img src={Logo4} className="SecondBannerRightImage" />
+                    <img src={Logo4} className="SecondBannerRightImage" alt="" />
                 </div>
             </div>
         </div>

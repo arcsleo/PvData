@@ -24,10 +24,10 @@ export default function Banner(props: any){
             </div>
             <div className="bannerRight">
                 <div className="ipadBack">
-                    <img src={PDF} className="BannerpdfImage" />
+                    <img src={PDF} className="BannerpdfImage" alt="" />
                 </div>
                 <div className="monitorBck">
-                    <img src={Excel} className="BannerexcelImage" />
+                    <img src={Excel} className="BannerexcelImage" alt="" />
                 </div>
             </div>
         </div>

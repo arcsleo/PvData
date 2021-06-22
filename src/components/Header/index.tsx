@@ -25,7 +25,7 @@ export default function Header(props: any){
     return(
         <div className={ sticked ? 'HeaderMain scrolled' : 'HeaderMain' }>
             <div className="headerLogoDiv">
-                <img src={Pvlogo} className="headerLogo" />
+                <img src={Pvlogo} className="headerLogo" alt="" />
             </div>
             <div className="headerBoxes">
                 <div className="headerInnerBox">
