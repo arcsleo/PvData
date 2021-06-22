@@ -1,0 +1,81 @@
+.HeaderMain{
+    width: 94vw;
+    background: #fff;
+    display: flex;
+    top: 0vh;
+    padding: 2vh 5vw;
+    align-items: center;
+    position: fixed;
+    font-style: normal;
+    transition: all 0.5s;
+    height: 8vh;
+    .headerLogoDiv{
+        width: 12vw;
+        display: flex;
+        .headerLogo{
+            width: 100%;
+            transition: all 0.5s;
+        }
+    }
+    .headerBoxes{
+        display: flex;
+        padding: 0vh 10vw;
+        width: 50vw;
+        .headerInnerBox{
+            width: 10vw;
+            text-align: center;
+            font-size: 1vw;
+            color: rgba(60, 54, 68, 0.8);
+            font-weight: 500;
+            cursor: pointer;
+        }
+    }
+    .headerButtonsDiv{
+        width: 12vw;
+        .headerButton{
+            width: 100%;
+            float: right;
+            padding: 2vh;
+            font-size: 0.9vw;
+            /* margin: 3vh 0vw; */
+            border-radius: 33px;
+            font-weight: 700;
+            color: #fff;
+            background: #27ae60;
+            border: 0px;
+            font-family: 'Poppins';
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+    }
+}
+.scrolled{
+    padding: 0.5vh 3vw;
+    .headerLogoDiv{
+        .headerLogo{
+            width: 70%;
+        }
+    }
+    .headerButtonsDiv{
+        .headerButton{
+            width: 85%;
+            font-size: 0.8vw;
+            padding: 1vh;
+        }
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    .HeaderMain{
+        height: 5vh;
+        .headerLogoDiv{
+            width: 30vw;
+        }
+        .headerBoxes{
+            display: none;
+        }
+        .headerButtonsDiv{
+            display: none;
+        }
+    }
+}

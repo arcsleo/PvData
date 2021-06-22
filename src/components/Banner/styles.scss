@@ -1,0 +1,149 @@
+.BannerHead{
+    height: 90vh;
+    background-image: url('../../assets/image/BannerImage1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0vh 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: bottom;
+    margin-top: 10vh;
+    .bannerLeft{
+        width: 45vw;
+        color: #fff;
+        .bannerLeftHeadtext{
+            font-size: 3vw;
+            font-weight: 800;
+            font-style: normal;
+        }
+        .bannerLeftSubtext{
+            font-size: 1.7vw;
+            font-weight: 700;
+            font-style: normal;
+        }
+        .bannerLeftBottomtext{
+            font-size: 1.2vw;
+            font-weight: 700;
+            font-style: normal;
+        }
+        .bannerLeftButton{
+            width: 40%;
+            padding: 2vh;
+            font-size: 1.4vw;
+            margin: 3vh 0vw;
+            border-radius: 33px;
+            font-weight: 700;
+            color: #fff;
+            background: rgba(39, 174, 96, 1);
+            border: 0px;
+            font-family: 'Poppins';
+        }
+    }
+    .bannerRight{
+        width: 45vw;
+        padding-left: 8vw;
+        position: relative;
+        .ipadBack{
+            background-image: url('../../assets/image/ipad.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            padding: 6vh 1vw;
+            height: 48vh;
+            position: absolute;
+            z-index: 50;
+            top: -25vh;
+            width: 16vw;
+            .BannerpdfImage{
+                width: 16vw;
+                height: 48vh;
+            }
+        }
+        .monitorBck{
+            background-image: url('../../assets/image/monitor.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: absolute;
+            z-index: 20;
+            top: -10vh;
+            height: 40vh;
+            padding: 2vh 1vw;
+            left: 16vw;
+            width: 28vw;
+            .BannerexcelImage{
+                width: 28vw;
+                height: 28.5vh;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    .BannerHead{
+        min-height: 95vh;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        .bannerLeft{
+            width: 100vw;
+            color: #000;
+            padding-top: 10vh;
+            .bannerLeftHeadtext{
+                font-size: 4vw;
+                font-weight: 800;
+                font-style: normal;
+                text-align: center;
+                margin-bottom: 4vw;            
+            }
+            .bannerLeftSubtext{
+                font-size: 2.4vw;
+                font-weight: 700;
+                font-style: normal;
+                text-align: center;
+                margin-bottom: 2vw;
+            }
+            .bannerLeftButtondiv{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 1vw;
+            }
+            .bannerLeftBottomtext {
+                font-size: 2.2vw;
+                font-weight: 700;
+                font-style: normal;
+                text-align: center;
+                margin-bottom: 3vw;
+            }
+        }
+        .bannerRight{
+            width: 100vw;
+            .ipadBack{
+                padding: 3vh 2vw;
+                height: 27vh;
+                position: absolute;
+                z-index: 50;
+                top: -25vh; 
+                width: 24vw;
+                left: 20vw;
+                .BannerpdfImage {
+                    width: 24vw;
+                    height: 26vh;
+                }
+            }
+            .monitorBck{
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                position: absolute;
+                z-index: 20;
+                top: -18vh;
+                height: 21vh;
+                padding: 1vh 1vw;
+                left: 35vw;
+                width: 40vw;
+                .BannerexcelImage{
+                    width: 39.5vw;
+                    height: 15vh;
+                }
+            }
+        }
+    }
+}

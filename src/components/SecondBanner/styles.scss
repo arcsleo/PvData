@@ -1,0 +1,79 @@
+.SecondBanner{
+    padding: 6vh 5vw;
+    width: 88vw;
+    display: flex;
+    .SecondBannerLeft{
+        width: 45vw;
+        color: #000;
+        .SecondBannerLeftHeadtext{
+            font-size: 2vw;
+            font-weight: 800;
+            font-style: normal;
+            margin-bottom: 4vh;
+        }
+        .SecondBannerLeftSubtext{
+            font-size: 1.2vw;
+            font-weight: 600;
+            font-style: normal;
+        }
+    }
+    .SecondBannerRight{
+        width: 45vw;
+        padding: 0vh 1.5vw;
+        display: flex;
+        align-items: center;
+        padding-right: 0vw !important;
+        .SecondBannerRightImagediv{
+            width: 10vw;
+            margin: 0vh 1vw;
+            .SecondBannerRightImage{
+                width: 100%;
+            }
+        }
+        .SecondBannerRightImagediv1{
+            width: 6vw;
+            margin: 0vh 1vw;
+            .SecondBannerRightImage{
+                width: 100%;
+            } 
+        }
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    .SecondBanner{
+        flex-wrap: wrap;
+        .SecondBannerLeft{
+            width: 100vw;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            .SecondBannerLeftHeadtext{
+                font-size: 3.5vw;
+                font-weight: 800;
+                font-style: normal;
+                margin-bottom: 2vh;
+                width: 75%;
+                text-align: center;
+            }
+            .SecondBannerLeftSubtext{
+                font-size: 2vw;
+                font-weight: 600;
+                font-style: normal;
+                margin-bottom: 3vh;
+                text-align: center;
+            }
+        }
+        .SecondBannerRight{
+            width: 100vw;
+            .SecondBannerRightImagediv{
+                width: 20vw;
+                margin: 0vh 2vw;
+            }
+            .SecondBannerRightImagediv1{
+                width: 10vw;
+                margin: 0vh 2vw;
+            }
+        }
+    }
+}
