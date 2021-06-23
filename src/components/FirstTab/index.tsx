@@ -19,17 +19,37 @@ export default function FirstTab(props: any){
         setactiveTab(id);
     };
 
+    React.useEffect(() => {
+        function stickHeaderHandler(e: any) {
+            
+        }
+        window.addEventListener('resize', stickHeaderHandler);
+
+        return () => {
+            window.removeEventListener('resize', stickHeaderHandler);
+        };
+        // eslint-disable-next-line
+    }, []);
+
     return(
+        <>
         <div className="FirstTabMain">
             <div className="FirstTabLeftSide">
                 { tabData.map((value)=>{
                     return(
                         value.id === activeTab ?
-                            <div className="FirstTabLeftCover" style={ value.id === activeTab ? {backgroundColor: value.Color }:{}}>
-                                <div className="FirstTabLeftCoverImagediv">
-                                    <img src={value.Image} className="FirstTabLeftCoverImage" alt="" />
+                            <>
+                                <div className="FirstTabLeftCover" style={ value.id === activeTab ? {backgroundColor: value.Color }:{}}>
+                                    <div className="FirstTabLeftCoverImagediv">
+                                        <img src={value.Image} className="FirstTabLeftCoverImage" alt="" />
+                                    </div>
                                 </div>
-                            </div>
+                                <div className="FirstTabMobile" style={ value.id === activeTab ? {backgroundColor: value.Color }:{}}>
+                                    <div className="FirstTabLeftCoverImagediv1">
+                                        <img src={value.Image} className="FirstTabLeftCoverImage" alt="" />
+                                    </div>
+                                </div>
+                            </>
                             :
                             null
                     );
@@ -67,5 +87,27 @@ export default function FirstTab(props: any){
                 })}
             </div>
         </div>
+            <div className="FirstTabRightSideMobile">
+                { tabData.map((value)=>{
+                    return(
+                        value.id === activeTab ?
+                            <>
+                                <div className="FirstTabLeftCover" style={ value.id === activeTab ? {backgroundColor: value.Color }:{}}>
+                                    <div className="FirstTabLeftCoverImagediv">
+                                        <img src={value.Image} className="FirstTabLeftCoverImage" alt="" />
+                                    </div>
+                                </div>
+                                <div className="FirstTabMobile" style={ value.id === activeTab ? {backgroundColor: value.Color }:{}}>
+                                    <div className="FirstTabLeftCoverImagediv1">
+                                        <img src={value.Image} className="FirstTabLeftCoverImage" alt="" />
+                                    </div>
+                                </div>
+                            </>
+                            :
+                            null
+                    );
+                }) }
+            </div>
+        </>
     );
 }

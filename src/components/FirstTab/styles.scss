@@ -4,6 +4,9 @@
     flex-wrap: wrap;
     .FirstTabLeftSide{
         width: 50vw;
+        .FirstTabMobile{
+            display: none;
+        }
         .FirstTabLeftCover{
             height: 100vh;
             width: 25vw;
@@ -39,7 +42,7 @@
             .FirstTabRightSectionTitle{
                 font-size: 2.5vw;
                 font-weight: 700;
-                width: 30vw;
+                width: 35vw;
             }
             .FirstTabRightSectionSubTitle{
                 font-size: 1.2vw;
@@ -52,7 +55,7 @@
                 margin-top: 5vh;
                 .FirstTabItem{
                     margin: 2vh 1.5vw;
-                    width: 17vw;
+                    width: 42%;
                     text-align: center;
                     border: 1px solid lightgrey;
                     margin-left: 0px;
@@ -63,7 +66,7 @@
                 }
                 .ActiveFirstTabItem{
                     margin: 2vh 1.5vw;
-                    width: 17vw;
+                    width: 41.5%;
                     text-align: center;
                     border: 2px solid rgba(0, 135, 83, 0.8);
                     margin-left: 0px;
@@ -74,5 +77,123 @@
                 }
             }
         }
+    }
+}
+
+.FirstTabRightSideMobile{
+    display: none;
+}
+
+@media only screen and (max-width: 1101px) {
+    .FirstTabMain{
+        margin-top: 2vh;
+        min-height: auto;
+        .FirstTabLeftSide{
+            order: 2;
+            width: 100vw;
+            display: none;
+            .FirstTabLeftCover{
+                display: none;
+            }
+            .FirstTabMobile{
+                display: block;
+                height: 100%;
+                margin-top: 50%;
+                position: relative;
+                .FirstTabLeftCoverImagediv1{
+                    width: 62%;
+                    position: absolute;
+                    height: 607px;
+                    top: -60%;
+                    margin-left: 15%;
+                    padding: 7% 4%;
+                    background-image: url('../../assets/image/ipad.png');
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                    .FirstTabLeftCoverImage{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        .FirstTabRightSide{
+            order: 1;
+            width: 80vw;
+            padding: 0vh 10vw;
+            align-items: flex-start;
+            .FirstTabRightInner{
+                .FirstTabRightSectionHead{
+                    font-size: 2vw;
+                    font-weight: 800;
+                    margin-bottom: 1vh;
+                }
+                .FirstTabRightSectionTitle{
+                    font-size: 4vw;
+                    font-weight: 700;
+                    width: 80vw;
+                }
+                .FirstTabRightSectionSubTitle{
+                    font-size: 2vw;
+                    margin-top: 2vh;
+                }
+                .FirstTabTabs{
+                    width: 80vw;
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-top: 2vh;
+                    justify-content: center;
+                    margin-bottom: 5vh;
+                    .FirstTabItem{
+                        width: 25vw;
+                        font-size: 1.6vw;
+                    }
+                    .ActiveFirstTabItem{
+                        width: 25vw;
+                        font-size: 1.6vw;
+                    }
+                }
+            }
+        }
+    }
+    .FirstTabRightSideMobile{
+        order: 2;
+        width: 100vw;
+        display: block;
+        .FirstTabLeftCover{
+            display: none;
+        }
+        .FirstTabMobile{
+            display: block;
+            height: 40vh;
+            margin-top: 50%;
+            position: relative;
+            .FirstTabLeftCoverImagediv1{
+                width: 62%;
+                position: absolute;
+                height: 607px;
+                top: -65vh;
+                margin-left: 15%;
+                padding: 7% 4%;
+                background-image: url('../../assets/image/ipad.png');
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                .FirstTabLeftCoverImage{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .FirstTabLeftCoverImagediv1{
+        width: 77% !important;
+        position: absolute;
+        height: 607px;
+        top: -40vh !important;
+        margin-left: 9% !important;
+        padding: 10% 3% !important;
     }
 }
